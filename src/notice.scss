@@ -1,0 +1,54 @@
+
+
+.notification-container {
+  position: absolute;
+  .notice-container {
+    position: relative;
+    margin-bottom: 5px;
+    background-color: #e0e455;
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: #000045;
+    font-size: 12px;
+    font-family: sans-serif;
+    min-height: 50px;
+    min-width: 150px;
+  }
+  span.close-button {
+    position: absolute;
+    top:-5px;
+    right: -5px;
+    cursor: pointer;
+    background-color: #e0e477;
+    border-radius: 50%;
+    padding: 1px;
+  }
+  .progressbar-container {
+    position: absolute;
+    bottom: 0;
+    background-color: red;
+    
+    z-index: 2;
+    // min-width: 150px;
+    min-height:5px;
+    // animation: progress 2s ease-in;
+    animation-name: progress;
+    animation-duration: 5s;
+    // animation-direction: alternate;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    // animation-iteration-count: infinite;
+    // animation-iteration-count: 3;
+    // animation-timing-function: linear;
+    // animation-
+  }
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: calc(100% - 10px);
+  }
+}
